@@ -1,0 +1,22 @@
+PS C:\Users\dac\Desktop\250240120089\Q3> docker build -t primenumber .
+[+] Building 2.1s (9/9) FINISHED
+ => [internal] load build definition from Dockerfile                                                                                                                                 0.0s
+ => => transferring dockerfile: 125B                                                                                                                                                 0.0s
+ => [internal] load .dockerignore                                                                                                                                                    0.                               0.1s
+ => => transferring context: 2B                                                                                                                                                      0.0s
+ => [internal] load metadata for docker.io/library/openjdk:latest                                                                                                                    1.8s
+ => [internal] load build context                                                                                                                                                    0.0s
+ => => transferring context: 733B                                                                                                                                                    0.0s
+ => [1/4] FROM docker.io/library/openjdk@sha256:9b448de897d211c9e0ec635a485650aed6e28d4eca1efbc34940560a480b3f1f                                                                     0.0s
+ => CACHED [2/4] WORKDIR /app                                                                                                                                                        0.0s
+ => CACHED [3/4] COPY . /app                                                                                                                                                         0.0s
+ => CACHED [4/4] RUN javac sum.java                                                                                                                                                  0.0s
+ => exporting to image                                                                                                                                                               0.1s
+ => => exporting layers                                                                                                                                                              0.0s
+ => => writing image sha256:79fa0161261f933c39de829a033e3954d227b4d6e99cb6b966ff1f585ebf43b2                                                                                         0.0s
+ => => naming to docker.io/library/primenumber                                                                                                                                       0.0s
+
+Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+
+PS C:\Users\dac\Desktop\250240120089\Q3> docker run --name prime primenumber
+Sum of first 5 prime numbers: 28

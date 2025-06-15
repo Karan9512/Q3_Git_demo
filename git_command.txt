@@ -1,0 +1,13 @@
+PS E:\Karan\Question3> git init
+Initialized empty Git repository in E:/Karan/Question3/.git/
+PS E:\Karan\Question3> git add .
+PS E:\Karan\Question3> git commit -m "first commit"
+[master (root-commit) d90b073] first commit
+ 4 files changed, 52 insertions(+)
+ create mode 100644 Dockerfile
+ create mode 100644 Q3_Docker.png
+ create mode 100644 Q3_Docker.txt
+ create mode 100644 sum.java
+PS E:\Karan\Question3> git branch -M main
+PS E:\Karan\Question3> git remote add origin https://github.com/Karan9512/Q3_Git_demo.git
+PS E:\Karan\Question3> git push -u origin main
